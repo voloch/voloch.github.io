@@ -191,32 +191,23 @@ a:hover{
   border-color: #a9c6ff;
 }
 
-/* Ouroboros fixo */
-.ouroboros-wrap{
-  position: fixed;
-  left: 50%;
-  bottom: 14px;
-  transform: translateX(-50%);
-  z-index: 10;
-  pointer-events: none; /* decorativo */
+/* footer no fim da página */
+.site-footer{
+  margin-top: 36px;               /* um respiro após o último card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* imagem do ouroboros só aparece no final ao rolar */
+.ouroboros{
+  max-height: 110px;
+  width: auto;
   opacity: .9;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,.6));
 }
-.ouroboros-wrap img{
-  max-height: 110px;
-  width: auto;
-}
 
-/* Acessibilidade: foco visível */
-a:focus-visible, .icon:focus-visible{
-  outline: 3px solid var(--ring);
-  outline-offset: 3px;
-  border-radius: 12px;
-}
-
-/* Ajustes responsivos */
 @media (max-width: 520px){
-  .avatar{ width: 130px; height: 130px; }
-  body{ padding-bottom: 120px; }
-  .ouroboros-wrap img{ max-height: 96px; }
+  .ouroboros{ max-height: 96px; }
 }
