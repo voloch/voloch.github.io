@@ -1,46 +1,91 @@
 <!doctype html>
-<meta charset="utf-8">
+<html lang="pt-br">
 <head>
-    <title>Alexandre Voloch</title>
-    <link rel='stylesheet' type='text/css' href='main.css'/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <title>Alexandre Voloch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel='stylesheet' type='text/css' href='main.css'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 
 <body>
-<h1>Minhas coisas acadêmicas</h1>
+  <main class="container">
+    <header class="hero">
+      <img class="avatar" src="eu2.jpeg" alt="Foto de Alexandre Voloch" width="200" height="200" />
+      <h1>Alexandre de Taunay Voloch</h1>
 
-<ul>
-    <li><b>Quantum error correction algorithms - a theoretical overview</b> (monografia para Informação Quântica - 7600074) -
-    <a href="Quantum%20error%20correction%20algorithms%20-%20a%20theoretical%20overview.pdf" target="_blank">pdf</a></li>
-</ul>
+      <!-- ícones sociais -->
+      <nav class="social">
+        <a class="icon" href="https://www.linkedin.com/in/alexandre-voloch-ab69822bb/" aria-label="LinkedIn" target="_blank" rel="noopener"
+                   data-tooltip="LinkedIn">
+          <!-- LinkedIn (SVG) -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2 4 0 4.74 2.62 4.74 6.03V24h-4v-7.1c0-1.7-.03-3.88-2.37-3.88-2.37 0-2.74 1.85-2.74 3.76V24h-4V8z"/></svg>
+        </a>
+        <a class="icon" href="https://lattes.cnpq.br/8998077191668076" aria-label="Lattes" target="_blank" rel="noopener"
+                   data-tooltip="Currículo Lattes">
+            <i class="ai ai-lattes" aria-hidden="true"></i>
+        </a>
+        <a class="icon" href="https://github.com/voloch" aria-label="GitHub" target="_blank" rel="noopener"
+        data-tooltip="GitHub">
+          <!-- GitHub (SVG) -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 0 12.6c0 5.34 3.44 9.86 8.2 11.46.6.12.82-.26.82-.58v-2.1c-3.34.74-4.04-1.64-4.04-1.64-.54-1.4-1.34-1.77-1.34-1.77-1.1-.78.08-.76.08-.76 1.22.09 1.86 1.27 1.86 1.27 1.08 1.9 2.84 1.35 3.54 1.03.11-.81.42-1.35.77-1.66-2.67-.31-5.48-1.39-5.48-6.18 0-1.36.47-2.47 1.25-3.34-.12-.3-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.27a11.1 11.1 0 0 1 6 0c2.3-1.6 3.3-1.27 3.3-1.27.66 1.7.24 2.96.12 3.26.78.87 1.25 1.98 1.25 3.34 0 4.8-2.82 5.86-5.5 6.17.43.38.82 1.12.82 2.27v3.36c0 .32.21.7.82.58A12 12 0 0 0 24 12.6 12 12 0 0 0 12 .5z"/></svg>
+        </a>
+        <a class="icon" href="resume_eldorado-1.pdf" aria-label="Resume (PDF)" target="_blank" rel="noopener"
+        data-tooltip="Resume (PDF)">
+          <!-- PDF / Resume (SVG) -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6zm1 7V3.5L19.5 9H15zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h5v2H8V9z"/></svg>
+        </a>
+      </nav>
 
-<h2>Lab avançado</h2>
+              <!-- novo bloco: sobre mim -->
+      <p class="about">
+      I have a bachelor's degree in Physics from the São Carlos Institute of Physics (IFSC-USP).
+      My previous research experience includes modeling noise in quantum computers using neural networks,
+      developing and simulating circuits in the Qiskit ecosystem, and studying dynamic decoupling techniques in transmons.
+      I am also a senior Python programmer with experience in scientific programming, data analysis and machine learning,
+        web development, automation, and AI agents.
+          My current interests include quantum advantage and biological applications of quantum computing.
+    </p>
 
-<ul>
-    <li><b>Efeito fotoeletrico pre -</b>
-    <a href="foto.pdf" target="_blank">pdf</a></li>
-    <li><b>Efeito fotoeletrico pos-</b>
-    <a href="posrelatorio_fotoeletrico.pdf" target="_blank">pdf</a></li>
-</ul>
+    </header>
+    <h2>Academic work</h2>
+    <section class="card">
+      <ul class="works">
+        <li>
+          <b>Caracterização e Supressão de Ruído Ambiental em Sistemas Quânticos usando Redes Neurais</b>
+          (undergraduate thesis / TCC) - November 2025 -
+          <a href="/tcc%20alexandre%20final%20formatado%20bonito.pdf" target="_blank" rel="noopener">pdf</a>
+        </li>
+      </ul>
+    </section>
+      <section class="card">
+      <ul class="works">
+        <li>
+          <b>Quantum error correction algorithms - a theoretical overview</b>
+          (final project for the class Informação Quântica - 7600074) – July 2024 -
+          <a href="/Quantum%20error%20correction%20algorithms%20-%20a%20theoretical%20overview.pdf" target="_blank" rel="noopener">pdf</a>
+        </li>
+      </ul>
+    </section>
 
-<br/><br/><br/><br/>
 
-    Cool string
-    <textarea readonly>{"iv":"i9GMBacrNL+iscnXBOIGCQ==",
-"v":1,
-"iter":1000,
-"ks":128,
-"ts":64,
-"mode":"ccm",
-"adata":"dGVzdGUxMjM=",
-"cipher":"aes",
-"salt":"IrDXqc2cmx0=",
-"ct":"cxUHjBHzaAthWGcTDmZozJ0BbV2gVK2355o9FQPo+wjX9+hPK/SP7MUGPOtT8WeiIG4VebAMlQmVKfPqVQYGM5P8tcqxbkCqQZWGIwcFvNwXWVloM0DBiQNiVy/IJYEunXmBnqijUe6yic9CGVvdkZ3nWYalyUaW+syVRsUyqJ3ELk1beELtBks4XWXUb3pKLnnzysdLX/BZWZThOa4A+eaHfJETpN6r"}</textarea>
+    <!-- Exemplo de bloco futuro
+    <section class="card">
+      <h2>Lab avançado</h2>
+      <ul class="works">
+        <li><b>Efeito fotoelétrico (pré)</b> – <a href="foto.pdf" target="_blank" rel="noopener">pdf</a></li>
+        <li><b>Efeito fotoelétrico (pós)</b> – <a href="posrelatorio_fotoeletrico.pdf" target="_blank" rel="noopener">pdf</a></li>
+      </ul>
+    </section>
+    -->
+  </main>
 
-    <a href="https://bitwiseshiftleft.github.io/sjcl/demo/">decrypt</a>
-<img src="ouroboros.gif">
-
+  <!-- Ouroboros fixo no rodapé -->
+  <div class="ouroboros-wrap" aria-hidden="true">
+    <img src="ouroboros.gif" alt="" />
+  </div>
 </body>
 </html>
